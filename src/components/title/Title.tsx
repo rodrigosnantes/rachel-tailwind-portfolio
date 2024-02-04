@@ -9,7 +9,7 @@ export default function Title({
 }) {
   return (
     <p
-      className="text-slate-400 text-center text-4xl md:text-6xl mb-4"
+      className="text-slate-400 text-center text-2xl md:text-4xl mb-2"
       data-aos="fade-right"
     >
       {title} <span className="text-violet-800">{colored}</span>

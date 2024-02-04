@@ -5,7 +5,7 @@ import Title from "../title/Title";
 export default function Skills() {
   return (
     <section id="skills" className="w-full h-screen flex justify-center">
-      <div className="w-full max-w-2xl lg:max-w-4xl xl:max-w-6xl flex flex-col items-center justify-center gap-4 flex-wrap mx-12 md:mx-auto">
+      <div className="w-full max-w-2xl lg:max-w-4xl flex flex-col items-center justify-center gap-2 mx-12 my-12 md:mx-auto">
         <Title title="Minhas" colored="Habilidades" />
 
         <SkillItem skillName="Redes de computadores" value={100} />

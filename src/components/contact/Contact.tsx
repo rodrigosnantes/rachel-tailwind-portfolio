@@ -5,7 +5,7 @@ import Title from "../title/Title";
 export default function Contact() {
   return (
     <section id="contact" className="w-full h-screen flex justify-center">
-      <div className="max-w-3xl md:max-w-4xl lg:max-w-6xl flex h-full flex-col items-center justify-center gap-4">
+      <div className="max-w-2xl lg:max-w-4xl flex h-full flex-col items-center justify-center gap-4">
         <Title title="Meu" colored="Contato" />
 
         <div className="flex gap-4" data-aos="fade-left">

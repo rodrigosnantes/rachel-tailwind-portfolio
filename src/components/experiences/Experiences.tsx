@@ -4,7 +4,7 @@ import Title from "../title/Title";
 export default function Experiences() {
   return (
     <section id="experiences" className="w-full min-h-screen flex justify-center">
-      <div className="max-w-2xl lg:max-w-4xl xl:max-w-6xl w-full flex flex-col justify-center gap-4 mx-12 md:mx-auto">
+      <div className="max-w-2xl lg:max-w-4xl w-full flex flex-col justify-center gap-4 mx-12 my-12 md:mx-auto mt-20">
         <Title title="Minhas" colored="Experiencias" />
 
         <ol
