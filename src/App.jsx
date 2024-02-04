@@ -1,4 +1,4 @@
-
+import AOS from 'aos';
 import MyParticle from './components/MyParticle';
 
 import Menu from './components/menu/Menu';
@@ -10,14 +10,17 @@ import Contact from './components/contact/Contact';
 import Experiences from './components/experiences/Experiences';
 
 import './App.css'
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 export default function App() {
 
   return (
     <div className='min-h-screen bg-slate-950 overflow-hidden'>
-      <MyParticle />
-      <Menu />
       <Header />
+      <Menu />
+      <MyParticle />
       <Home />
       <About />
       <Skills />
