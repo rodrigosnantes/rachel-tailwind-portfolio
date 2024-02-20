@@ -9,11 +9,22 @@ export default function Contact() {
         <Title title="Meu" colored="Contato" />
 
         <div className="flex gap-4" data-aos="fade-left">
-          <button className="cursor-pointer border-solid border-2 border-violet-800 p-1 rounded-lg shadow-lg hover:shadow-violet-800/40">
+          <button
+            className="cursor-pointer border-solid border-2 border-violet-800 p-1 rounded-lg shadow-lg hover:shadow-violet-800/40"
+            onClick={() => window.open("mailto:rachel.bullmann@gmail.com")}
+          >
             <AtSign className="text-slate-400" size={30} />
           </button>
 
-          <button className="cursor-pointer border-solid border-2 border-violet-800 p-1 rounded-lg shadow-lg hover:shadow-violet-800/40">
+          <button
+            className="cursor-pointer border-solid border-2 border-violet-800 p-1 rounded-lg shadow-lg hover:shadow-violet-800/40"
+            onClick={() =>
+              window.open(
+                "https://www.linkedin.com/in/rachelbullmann/",
+                "_blank"
+              )
+            }
+          >
             <Linkedin className="text-slate-400" size={30} />
           </button>
         </div>
@@ -21,6 +32,4 @@ export default function Contact() {
     </section>
   );
 }
-//email: rachel.bullmann@gmail.com
-//https://www.linkedin.com/in/rachelbullmann/
 //futuro hackthebox: https://app.hackthebox.com/profile/244363
