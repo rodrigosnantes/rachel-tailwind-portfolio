@@ -1,11 +1,17 @@
 import React from "react";
 import Title from "../title/Title";
+import { useTranslation } from "react-i18next";
 
 export default function Experiences() {
+  const { t } = useTranslation();
+
   return (
-    <section id="experiences" className="w-full min-h-screen flex justify-center">
+    <section
+      id="experiences"
+      className="w-full min-h-screen flex justify-center"
+    >
       <div className="max-w-2xl lg:max-w-4xl w-full flex flex-col justify-center gap-4 mx-12 my-12 md:mx-auto mt-20">
-        <Title title="Minhas" colored="Experiencias" />
+        <Title title={t("ex-title")} colored={t("ex-subtitle")} />
 
         <ol
           className="border-l md:flex md:justify-center md:gap-6 md:border-l-0 md:border-t"
@@ -13,29 +19,20 @@ export default function Experiences() {
         >
           <ExperienceItem
             time="2014-2018"
-            role="Analista de Suporte"
-            text="
-          - Unisys - suporte direto ao usuário final auxiliando com dificuldades diárias correlacionadas ao SO e Softwares instalados, auxiliando na resolução de problemas.
-          através do telefone, chat e acesso remoto.          
-          - Senac MS - estagiaria no suporte presencial, realizando formatações, troca de peças e maquinas e apoio técnico ao funcionário interno.         
-            - Nastek - suporte para o sitema da empresa lidando com necessidades de técnicos em campo e apoiando nas soluções de problemas e escritas de relatórios diarios.
-           "
+            role={t("ex-title-01")}
+            text={t("ex-01")}
           />
 
           <ExperienceItem
             time="2018-2022"
-            role="Analista de suporte avançado Linux"
-            text="Na Hostgator atuei como suporte avançado aos servidores de hospedagem 
-          dedicados e compartilhados da empresa. Atividades diárias envolviam instalação e atualização de pacotes, resoluções de problemas de DNS e SMTP, manutenção nos paineis de hospedagem cPanel e Plesk.
-          Além de automatizar tarefas diárias ou repetitivas com bash script. Atendimentos via ticket e chat, explicando a parte técnica de maneira que o cliente entenda."
+            role={t("ex-title-02")}
+            text={t("ex-02")}
           />
 
           <ExperienceItem
             time="2022 - Atual"
-            role="Cyber Security Engineer"
-            text="Atualmente trabalho na RD Station, estou atuando como Purple team onde meu desafio diário
-          é proteger o produto contra Fraudes e possíveis ameaças. Atuo com Threat Intelligence para trazer mais segurança para a empresa e aos nossos clientes. 
-          Realizo análise de diversos dados diariamente em busca de padrões, possuo proximidade com os times de produto para recomendações de segurança em novas funcionalidades."
+            role={t("ex-title-03")}
+            text={t("ex-03")}
           />
         </ol>
       </div>

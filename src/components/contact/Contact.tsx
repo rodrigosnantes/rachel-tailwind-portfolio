@@ -1,12 +1,15 @@
 import React from "react";
 import { AtSign, Linkedin } from "lucide-react";
 import Title from "../title/Title";
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
+  const { t } = useTranslation();
+
   return (
     <section id="contact" className="w-full h-screen flex justify-center">
       <div className="max-w-2xl lg:max-w-4xl flex h-full flex-col items-center justify-center gap-4">
-        <Title title="Meu" colored="Contato" />
+        <Title title={t('contact-title')} colored={t('contact-subtitle')} />
 
         <div className="flex gap-4" data-aos="fade-left">
           <button
