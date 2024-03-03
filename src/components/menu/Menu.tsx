@@ -21,7 +21,7 @@ export default function Menu() {
 
   return (
     <div className="fixed bottom-10 left-0 right-0 md:right-10 md:top-0 md:bottom-0 md:left-auto flex items-center justify-center z-50">
-      <div className="flex row md:flex-col gap-2 md:gap-4">
+      <div className="flex row md:flex-col gap-2">
         <MenuButton to="home">
           <Home className="text-slate-400" />
         </MenuButton>
