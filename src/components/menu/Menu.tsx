@@ -43,7 +43,6 @@ export default function Menu() {
         </MenuButton>
 
         <button
-          data-aos="fade-down"
           className="cursor-pointer border-solid border-2 border-violet-800 p-1 rounded-lg shadow-lg hover:shadow-violet-800/40"
           onClick={changeLanguage}
         >
